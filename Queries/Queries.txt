@@ -1,30 +1,275 @@
 (1) Find all the topics and tasks which are thought in the month of October
 Query:
-
+db.topics.aggregate([
+  {$match:{date:{$gte:"2023-10-01", $lte:"2023-10-31"}}},
+  {$lookup:{from:"tasks",localField:"task_id",foreignField:"_id",as:"tasks"}}
+])
 
 Result:
+{
+  _id: ObjectId('6632c03e3acb9a274773ec06'),
+  name: 'HTML',
+  date: '2023-10-07',
+  task_id: ObjectId('6632c0a43acb9a274773ec0c'),
+  tasks: [
+    {
+      _id: ObjectId('6632c0a43acb9a274773ec0c'),
+      name: 'Task 1',
+      date: '2023-10-07',
+      submission_status: [
+        {
+          _id: ObjectId('6632bf753acb9a274773ebff'),
+          status: 'not submitted'
+        },
+        {
+          _id: ObjectId('6632bf753acb9a274773ec02'),
+          status: 'not submitted'
+        },
+        {
+          _id: ObjectId('6632bf753acb9a274773ec01'),
+          status: 'submitted'
+        }
+      ]
+    }
+  ]
+}
+{
+  _id: ObjectId('6632c03e3acb9a274773ec07'),
+  name: 'CSS',
+  date: '2023-10-18',
+  task_id: ObjectId('6632c0a43acb9a274773ec0d'),
+  tasks: [
+    {
+      _id: ObjectId('6632c0a43acb9a274773ec0d'),
+      name: 'Task 2',
+      date: '2023-10-18',
+      submission_status: [
+        {
+          _id: ObjectId('6632bf753acb9a274773ec00'),
+          status: 'not submitted'
+        },
+        {
+          _id: ObjectId('6632bf753acb9a274773ebff'),
+          status: 'submitted'
+        },
+        {
+          _id: ObjectId('6632bf753acb9a274773ec03'),
+          status: 'not submitted'
+        }
+      ]
+    }
+  ]
+}
+{
+  _id: ObjectId('6632c03e3acb9a274773ec07'),
+  name: 'CSS',
+  date: '2023-10-18',
+  task_id: ObjectId('6632c0a43acb9a274773ec0d'),
+  tasks: [
+    {
+      _id: ObjectId('6632c0a43acb9a274773ec0d'),
+      name: 'Task 2',
+      date: '2023-10-18',
+      submission_status: [
+        {
+          _id: ObjectId('6632bf753acb9a274773ec00'),
+          status: 'not submitted'
+        },
+        {
+          _id: ObjectId('6632bf753acb9a274773ebff'),
+          status: 'submitted'
+        },
+        {
+          _id: ObjectId('6632bf753acb9a274773ec03'),
+          status: 'not submitted'
+        }
+      ]
+    }
+  ]
+}
 
 // ===============================================================================================================================================
+
 (2) Find all the company drives which appeared between 15 oct-2020 and 31-oct-2020
 Query:
-
+db.company_drives.find({$and:[{drive_date:{$gte:"2023-10-15"}},{drive_date:{$lte:"2023-10-31"}}]});
 
 Result:
+{
+  _id: ObjectId('6632c7813acb9a274773ec1f'),
+  company_name: 'Goldman Sachs',
+  drive_date: '2023-10-15',
+  appeared_students: [
+    {
+      user_id: ObjectId('6632bf753acb9a274773ec02')
+    },
+    {
+      user_id: ObjectId('6632bf753acb9a274773ec03')
+    },
+    {
+      user_id: ObjectId('6632bf753acb9a274773ec01')
+    }
+  ],
+  selected_students: [
+    {
+      user_id: ObjectId('6632bf753acb9a274773ec02')
+    },
+    {
+      user_id: ObjectId('6632bf753acb9a274773ec01')
+    }
+  ]
+}
+{
+  _id: ObjectId('6632c7813acb9a274773ec20'),
+  company_name: 'JP Morgan',
+  drive_date: '2023-10-30',
+  appeared_students: [
+    {
+      user_id: ObjectId('6632bf753acb9a274773ebff')
+    },
+    {
+      user_id: ObjectId('6632bf753acb9a274773ec01')
+    },
+    {
+      user_id: ObjectId('6632bf753acb9a274773ec02')
+    },
+    {
+      user_id: ObjectId('6632bf753acb9a274773ec03')
+    }
+  ],
+  selected_students: [
+    {
+      user_id: ObjectId('6632bf753acb9a274773ebff')
+    }
+  ]
+}
+{
+  _id: ObjectId('6632c7813acb9a274773ec21'),
+  company_name: 'Black Rock',
+  drive_date: '2023-10-23',
+  appeared_students: [
+    {
+      user_id: ObjectId('6632bf753acb9a274773ebff')
+    },
+    {
+      user_id: ObjectId('6632bf753acb9a274773ec01')
+    },
+    {
+      user_id: ObjectId('6632bf753acb9a274773ec02')
+    },
+    {
+      user_id: ObjectId('6632bf753acb9a274773ec03')
+    }
+  ],
+  selected_students: [
+    {
+      user_id: ObjectId('6632bf753acb9a274773ebff')
+    },
+    {
+      user_id: ObjectId('6632bf753acb9a274773ec02')
+    },
+    {
+      user_id: ObjectId('6632bf753acb9a274773ec03')
+    }
+  ]
+}
 
 // ====================================================================================================================================================
+
 (3) Find all the company drives and students who are appeared for the placement.
 Query:
+db.company_drives.find({},{company_name:1, appeared_students:1})
 
 Result:
+{
+  _id: ObjectId('6632c7813acb9a274773ec1e'),
+  company_name: 'Zoho',
+  appeared_students: [
+    {
+      user_id: ObjectId('6632bf753acb9a274773ec00')
+    },
+    {
+      user_id: ObjectId('6632bf753acb9a274773ebff')
+    }
+  ]
+}
+{
+  _id: ObjectId('6632c7813acb9a274773ec1f'),
+  company_name: 'Goldman Sachs',
+  appeared_students: [
+    {
+      user_id: ObjectId('6632bf753acb9a274773ec02')
+    },
+    {
+      user_id: ObjectId('6632bf753acb9a274773ec03')
+    },
+    {
+      user_id: ObjectId('6632bf753acb9a274773ec01')
+    }
+  ]
+}
+{
+  _id: ObjectId('6632c7813acb9a274773ec20'),
+  company_name: 'JP Morgan',
+  appeared_students: [
+    {
+      user_id: ObjectId('6632bf753acb9a274773ebff')
+    },
+    {
+      user_id: ObjectId('6632bf753acb9a274773ec01')
+    },
+    {
+      user_id: ObjectId('6632bf753acb9a274773ec02')
+    },
+    {
+      user_id: ObjectId('6632bf753acb9a274773ec03')
+    }
+  ]
+}
+{
+  _id: ObjectId('6632c7813acb9a274773ec21'),
+  company_name: 'Black Rock',
+  appeared_students: [
+    {
+      user_id: ObjectId('6632bf753acb9a274773ebff')
+    },
+    {
+      user_id: ObjectId('6632bf753acb9a274773ec01')
+    },
+    {
+      user_id: ObjectId('6632bf753acb9a274773ec02')
+    },
+    {
+      user_id: ObjectId('6632bf753acb9a274773ec03')
+    }
+  ]
+}
 
 // ====================================================================================================================================================
+
 (4) Find the number of problems solved by the user in codekata
 Query:
-
-
-Result:
+db.Codekata.aggregate([
+    {
+        $unwind: "$user_id"
+    },
+    {
+        $match: {
+            "user_id._id": ObjectId('6632bf753acb9a274773ec01')
+        }
+    },
+    {
+        $group: {
+            _id: "$_id",
+            totalSolved: {
+                $sum: "$user_id.sloved"
+            }
+        }
+    }
+])
 
 // ====================================================================================================================================================
+
 (5) Find all the mentors with who has the mentee's count more than 15
 Query:
 db.mentors.find({mentees_count:{$gt : 15}})
@@ -57,10 +302,27 @@ Result:
 }
 
 // ====================================================================================================================================================
+
 (6) Find the number of users who are absent and task is not submitted  between 15 oct-2020 and 31-oct-2020
 Query:
-
+db.attendance.aggregate([
+  {$match:{date:{$gte:"2023-10-15",$lte:"2023-10-31"}}},
+  {$unwind:"$user_id"},
+  {$match:{"user_id.status":"absent","user_id.tasksubmitted":"no"}}
+])
 
 Result:
+{
+  _id: ObjectId('6632cab73acb9a274773ec2b'),
+  date: '2023-10-18',
+  user_id: {
+    _id: ObjectId('6632bf753acb9a274773ebff'),
+    status: 'absent',
+    tasksubmitted: 'no'
+  }
+}
 
 // ====================================================================================================================================================
+
+
+
