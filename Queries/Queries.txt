@@ -1,40 +1,66 @@
-Find all the topics and tasks which are thought in the month of October
+(1) Find all the topics and tasks which are thought in the month of October
 Query:
 
 
 Result:
 
-
-Find all the company drives which appeared between 15 oct-2020 and 31-oct-2020
+// ===============================================================================================================================================
+(2) Find all the company drives which appeared between 15 oct-2020 and 31-oct-2020
 Query:
 
 
 Result:
 
-
-Find all the company drives and students who are appeared for the placement.
+// ====================================================================================================================================================
+(3) Find all the company drives and students who are appeared for the placement.
 Query:
 
 Result:
 
-
-Find the number of problems solved by the user in codekata
-Query:
-
-
-Result:
-
-
-Find all the mentors with who has the mentee's count more than 15
+// ====================================================================================================================================================
+(4) Find the number of problems solved by the user in codekata
 Query:
 
 
 Result:
 
+// ====================================================================================================================================================
+(5) Find all the mentors with who has the mentee's count more than 15
+Query:
+db.mentors.find({mentees_count:{$gt : 15}})
 
-Find the number of users who are absent and task is not submitted  between 15 oct-2020 and 31-oct-2020
+Result:
+{
+  _id: ObjectId('6632c9523acb9a274773ec24'),
+  name: 'Sanjay Saravanan',
+  mentees_count: 40
+}
+{
+  _id: ObjectId('6632c9523acb9a274773ec25'),
+  name: 'Vishnuvardhan',
+  mentees_count: 25
+}
+{
+  _id: ObjectId('6632c9523acb9a274773ec26'),
+  name: 'Thirupathi',
+  mentees_count: 46
+}
+{
+  _id: ObjectId('6632c9523acb9a274773ec27'),
+  name: 'Arun',
+  mentees_count: 30
+}
+{
+  _id: ObjectId('6632c9523acb9a274773ec28'),
+  name: 'Athithyan',
+  mentees_count: 35
+}
+
+// ====================================================================================================================================================
+(6) Find the number of users who are absent and task is not submitted  between 15 oct-2020 and 31-oct-2020
 Query:
 
 
 Result:
 
+// ====================================================================================================================================================
