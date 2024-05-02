@@ -1,0 +1,123 @@
+[{
+  "_id": {
+    "$oid": "6632c0a43acb9a274773ec0c"
+  },
+  "name": "Task 1",
+  "date": "2023-10-07",
+  "submission_status": [
+    {
+      "_id": {
+        "$oid": "6632bf753acb9a274773ebff"
+      },
+      "status": "not submitted"
+    },
+    {
+      "_id": {
+        "$oid": "6632bf753acb9a274773ec02"
+      },
+      "status": "not submitted"
+    },
+    {
+      "_id": {
+        "$oid": "6632bf753acb9a274773ec01"
+      },
+      "status": "submitted"
+    }
+  ]
+},
+{
+  "_id": {
+    "$oid": "6632c0a43acb9a274773ec0d"
+  },
+  "name": "Task 2",
+  "date": "2023-10-18",
+  "submission_status": [
+    {
+      "_id": {
+        "$oid": "6632bf753acb9a274773ec00"
+      },
+      "status": "not submitted"
+    },
+    {
+      "_id": {
+        "$oid": "6632bf753acb9a274773ebff"
+      },
+      "status": "submitted"
+    },
+    {
+      "_id": {
+        "$oid": "6632bf753acb9a274773ec03"
+      },
+      "status": "not submitted"
+    }
+  ]
+},
+{
+  "_id": {
+    "$oid": "6632c0a43acb9a274773ec0e"
+  },
+  "name": "Task 3",
+  "date": "2023-10-24",
+  "submission_status": [
+    {
+      "_id": {
+        "$oid": "6632bf753acb9a274773ec02"
+      },
+      "status": "submitted"
+    },
+    {
+      "_id": {
+        "$oid": "6632bf753acb9a274773ec01"
+      },
+      "status": "not submitted"
+    }
+  ]
+},
+{
+  "_id": {
+    "$oid": "6632c0a43acb9a274773ec0f"
+  },
+  "name": "Task 4",
+  "date": "2023-11-28",
+  "submission_status": [
+    {
+      "_id": {
+        "$oid": "6632bf753acb9a274773ec00"
+      },
+      "status": "submitted"
+    },
+    {
+      "_id": {
+        "$oid": "6632bf753acb9a274773ec03"
+      },
+      "status": "not submitted"
+    },
+    {
+      "_id": {
+        "$oid": "6632bf753acb9a274773ebff"
+      },
+      "status": "submitted"
+    }
+  ]
+},
+{
+  "_id": {
+    "$oid": "6632c0a43acb9a274773ec10"
+  },
+  "name": "Task 5",
+  "date": "2023-11-29",
+  "submission_status": [
+    {
+      "_id": {
+        "$oid": "6632bf753acb9a274773ebff"
+      },
+      "status": "not submitted"
+    },
+    {
+      "_id": {
+        "$oid": "6632bf753acb9a274773ec02"
+      },
+      "status": "submitted"
+    }
+  ]
+}]

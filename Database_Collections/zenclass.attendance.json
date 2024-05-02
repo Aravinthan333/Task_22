@@ -1,0 +1,138 @@
+[{
+  "_id": {
+    "$oid": "6632cab73acb9a274773ec2a"
+  },
+  "date": "2023-10-07",
+  "user_id": [
+    {
+      "_id": {
+        "$oid": "6632bf753acb9a274773ec03"
+      },
+      "status": "present",
+      "tasksubmitted": "no"
+    },
+    {
+      "_id": {
+        "$oid": "6632bf753acb9a274773ec00"
+      },
+      "status": "absent",
+      "tasksubmitted": "no"
+    },
+    {
+      "_id": {
+        "$oid": "6632bf753acb9a274773ebff"
+      },
+      "status": "absentt",
+      "tasksubmitted": "yes"
+    }
+  ]
+},
+{
+  "_id": {
+    "$oid": "6632cab73acb9a274773ec2b"
+  },
+  "date": "2023-10-18",
+  "user_id": [
+    {
+      "_id": {
+        "$oid": "6632bf753acb9a274773ebff"
+      },
+      "status": "absent",
+      "tasksubmitted": "no"
+    },
+    {
+      "_id": {
+        "$oid": "6632bf753acb9a274773ec03"
+      },
+      "status": "present",
+      "tasksubmitted": "yes"
+    },
+    {
+      "_id": {
+        "$oid": "6632bf753acb9a274773ec02"
+      },
+      "status": "present",
+      "tasksubmitted": "no"
+    }
+  ]
+},
+{
+  "_id": {
+    "$oid": "6632cab73acb9a274773ec2c"
+  },
+  "date": "2023-10-24",
+  "user_id": [
+    {
+      "_id": {
+        "$oid": "6632bf753acb9a274773ec01"
+      },
+      "status": "present",
+      "tasksubmitted": "no"
+    },
+    {
+      "_id": {
+        "$oid": "6632bf753acb9a274773ec00"
+      },
+      "status": "present",
+      "tasksubmitted": "yes"
+    }
+  ]
+},
+{
+  "_id": {
+    "$oid": "6632cab73acb9a274773ec2d"
+  },
+  "date": "2023-11-28",
+  "user_id": [
+    {
+      "_id": {
+        "$oid": "6632bf753acb9a274773ebff"
+      },
+      "status": "absent",
+      "tasksubmitted": "yes"
+    },
+    {
+      "_id": {
+        "$oid": "6632bf753acb9a274773ec03"
+      },
+      "status": "present",
+      "tasksubmitted": "yes"
+    },
+    {
+      "_id": {
+        "$oid": "6632bf753acb9a274773ec02"
+      },
+      "status": "present",
+      "tasksubmitted": "yes"
+    }
+  ]
+},
+{
+  "_id": {
+    "$oid": "6632cab73acb9a274773ec2e"
+  },
+  "date": "2023-11-29",
+  "user_id": [
+    {
+      "_id": {
+        "$oid": "6632bf753acb9a274773ec01"
+      },
+      "status": "present",
+      "tasksubmitted": "no"
+    },
+    {
+      "_id": {
+        "$oid": "6632bf753acb9a274773ec00"
+      },
+      "status": "present",
+      "tasksubmitted": "yes"
+    },
+    {
+      "_id": {
+        "$oid": "6632bf753acb9a274773ebff"
+      },
+      "status": "absent",
+      "tasksubmitted": "no"
+    }
+  ]
+}]

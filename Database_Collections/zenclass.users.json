@@ -1,0 +1,40 @@
+[{
+  "_id": {
+    "$oid": "6632bf753acb9a274773ebff"
+  },
+  "name": "Aravinthan",
+  "batch": "B52WE",
+  "mail_id": "aravinthan@gmail.com"
+},
+{
+  "_id": {
+    "$oid": "6632bf753acb9a274773ec00"
+  },
+  "name": "Jhon",
+  "batch": "B19WE",
+  "mail_id": "jhonn@gmail.com"
+},
+{
+  "_id": {
+    "$oid": "6632bf753acb9a274773ec01"
+  },
+  "name": "Stanley",
+  "batch": "B18WE",
+  "mail_id": "stanlee@gmail.com"
+},
+{
+  "_id": {
+    "$oid": "6632bf753acb9a274773ec02"
+  },
+  "name": "Balaji",
+  "batch": "B51WE",
+  "mail_id": "balaji@gmail.com"
+},
+{
+  "_id": {
+    "$oid": "6632bf753acb9a274773ec03"
+  },
+  "name": "Saravanan",
+  "batch": "B32WE",
+  "mail_id": "saravanan@gmail.com"
+}]

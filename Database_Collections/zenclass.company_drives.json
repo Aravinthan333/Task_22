@@ -1,0 +1,144 @@
+[{
+  "_id": {
+    "$oid": "6632c7813acb9a274773ec1e"
+  },
+  "company_name": "Zoho",
+  "drive_date": "2023-10-03",
+  "appeared_students": [
+    {
+      "user_id": {
+        "$oid": "6632bf753acb9a274773ec00"
+      }
+    },
+    {
+      "user_id": {
+        "$oid": "6632bf753acb9a274773ebff"
+      }
+    }
+  ],
+  "selected_students": [
+    {
+      "user_id": {
+        "$oid": "6632bf753acb9a274773ebff"
+      }
+    }
+  ]
+},
+{
+  "_id": {
+    "$oid": "6632c7813acb9a274773ec1f"
+  },
+  "company_name": "Goldman Sachs",
+  "drive_date": "2023-10-15",
+  "appeared_students": [
+    {
+      "user_id": {
+        "$oid": "6632bf753acb9a274773ec02"
+      }
+    },
+    {
+      "user_id": {
+        "$oid": "6632bf753acb9a274773ec03"
+      }
+    },
+    {
+      "user_id": {
+        "$oid": "6632bf753acb9a274773ec01"
+      }
+    }
+  ],
+  "selected_students": [
+    {
+      "user_id": {
+        "$oid": "6632bf753acb9a274773ec02"
+      }
+    },
+    {
+      "user_id": {
+        "$oid": "6632bf753acb9a274773ec01"
+      }
+    }
+  ]
+},
+{
+  "_id": {
+    "$oid": "6632c7813acb9a274773ec20"
+  },
+  "company_name": "JP Morgan",
+  "drive_date": "2023-10-30",
+  "appeared_students": [
+    {
+      "user_id": {
+        "$oid": "6632bf753acb9a274773ebff"
+      }
+    },
+    {
+      "user_id": {
+        "$oid": "6632bf753acb9a274773ec01"
+      }
+    },
+    {
+      "user_id": {
+        "$oid": "6632bf753acb9a274773ec02"
+      }
+    },
+    {
+      "user_id": {
+        "$oid": "6632bf753acb9a274773ec03"
+      }
+    }
+  ],
+  "selected_students": [
+    {
+      "user_id": {
+        "$oid": "6632bf753acb9a274773ebff"
+      }
+    }
+  ]
+},
+{
+  "_id": {
+    "$oid": "6632c7813acb9a274773ec21"
+  },
+  "company_name": "Black Rock",
+  "drive_date": "2023-10-23",
+  "appeared_students": [
+    {
+      "user_id": {
+        "$oid": "6632bf753acb9a274773ebff"
+      }
+    },
+    {
+      "user_id": {
+        "$oid": "6632bf753acb9a274773ec01"
+      }
+    },
+    {
+      "user_id": {
+        "$oid": "6632bf753acb9a274773ec02"
+      }
+    },
+    {
+      "user_id": {
+        "$oid": "6632bf753acb9a274773ec03"
+      }
+    }
+  ],
+  "selected_students": [
+    {
+      "user_id": {
+        "$oid": "6632bf753acb9a274773ebff"
+      }
+    },
+    {
+      "user_id": {
+        "$oid": "6632bf753acb9a274773ec02"
+      }
+    },
+    {
+      "user_id": {
+        "$oid": "6632bf753acb9a274773ec03"
+      }
+    }
+  ]
+}]

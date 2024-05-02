@@ -1,0 +1,63 @@
+[{
+  "_id": {
+    "$oid": "6632cc453acb9a274773ec36"
+  },
+  "topic": "Input Output",
+  "no_of_qusetions": 30,
+  "completed_by": [
+    {
+      "student_id": {
+        "$oid": "6632bf753acb9a274773ebff"
+      },
+      "solved": 24
+    },
+    {
+      "student_id": {
+        "$oid": "6632bf753acb9a274773ec03"
+      },
+      "solved": 30
+    }
+  ]
+},
+{
+  "_id": {
+    "$oid": "6632cc453acb9a274773ec37"
+  },
+  "topic": "OOPs",
+  "no_of_qusetions": 25,
+  "completed_by": [
+    {
+      "student_id": {
+        "$oid": "6632bf753acb9a274773ec02"
+      },
+      "solved": 24
+    },
+    {
+      "student_id": {
+        "$oid": "6632bf753acb9a274773ec00"
+      },
+      "solved": 30
+    }
+  ]
+},
+{
+  "_id": {
+    "$oid": "6632cc453acb9a274773ec38"
+  },
+  "topic": "Arrays",
+  "no_of_qusetions": 45,
+  "completed_by": [
+    {
+      "student_id": {
+        "$oid": "6632bf753acb9a274773ec01"
+      },
+      "solved": 24
+    },
+    {
+      "student_id": {
+        "$oid": "6632bf753acb9a274773ebff"
+      },
+      "solved": 30
+    }
+  ]
+}]
